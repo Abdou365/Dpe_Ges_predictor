@@ -47,7 +47,7 @@ class allValue(BaseModel):
 
 
 
-@app.get("/dpe/options", response_model=allValue)
+@app.get("/", response_model=allValue)
 async def read_root():
     Qualite_isolation_enveloppe=allValueByColumns['Qualité_isolation_enveloppe']
     Type_energie_principale_chauffage = allValueByColumns['Type_énergie_principale_chauffage']
