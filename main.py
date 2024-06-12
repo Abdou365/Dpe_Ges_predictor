@@ -6,7 +6,8 @@ from model_3 import allValueByColumns, predict_dpe_ges
 
 app = FastAPI()
 origins = [
-    "http://localhost:3000"
+    "http://localhost:3000",
+    "https://frontend-6k5404mdu-klamias-projects.vercel.app/"
 ]
 
 app.add_middleware(
