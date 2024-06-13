@@ -5,7 +5,9 @@ from pydantic import BaseModel
 from model_3 import allValueByColumns, predict_dpe_ges
 
 app = FastAPI()
-origins = ["*"]
+origins = [
+    "*"
+]
 
 app.add_middleware(
         CORSMiddleware, 
